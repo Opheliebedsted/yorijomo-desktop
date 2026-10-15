@@ -186,7 +186,7 @@ main,
   gap: 32px;
 }
 .about__title {
-  font: 400 64px/1.2 var(--serif);
+  font: 300 64px/1.2 var(--serif);
   color: var(--text-brown);
 }
 .about__body {
@@ -308,7 +308,7 @@ main,
   padding: 48px 100px;
 }
 .section-title {
-  font: 400 64px/1.2 var(--serif);
+  font: 300 64px/1.2 var(--serif);
   text-align: center;
 }
 .products {
@@ -413,7 +413,7 @@ main,
   align-items: flex-end;
 }
 .insta__title {
-  font: 300 36px/1.2 var(--serif);
+  font: 00 36px/1.2 var(--serif);
 }
 .insta__link {
   font: 400 18px/1.2 var(--sans);
@@ -446,7 +446,7 @@ main,
   gap: 32px;
 }
 .newsletter__title {
-  font: 400 48px/1.2 var(--serif);
+  font: 300 48px/1.2 var(--serif);
 }
 .newsletter__text {
   font: 400 20px/1.2 var(--sans);
