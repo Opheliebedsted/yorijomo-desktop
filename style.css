@@ -134,7 +134,7 @@ main,
   left: 0;
   display: flex;
   gap: 5px;
-  animation: slide 20s linear infinite;
+  animation: slide 40s linear infinite;
 }
 .hero__track img {
   width: 500px;
