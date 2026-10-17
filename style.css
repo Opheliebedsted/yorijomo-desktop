@@ -113,7 +113,7 @@ main,
   color: var(--black-browm);
 }
 .nav__links a:hover {
-  color: var(--black-brown);
+  color: var(--olive-500);
 }
 .nav__links:last-child {
   justify-content: flex-end;
