@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- LOGIN OVERLAY (Dette dækker siden indtil koden er tastet) -->
+    <div id="login-overlay">
+      <div class="login-box">
+        <h2>Indtast adgangskode</h2>
+        <p>Dette er et skoleprojekt - adgangskoden er "EK"</p>
+        <input
+          type="password"
+          id="password-input"
+          placeholder="Skriv koden her..."
+        />
+        <br />
+        <button onclick="checkPassword()">Log ind</button>
+        <div id="error-msg"></div>
+      </div>
+    </div>
     <!-- NAVIGATION -->
     <header class="nav">
       <nav class="nav__links">
@@ -269,7 +284,34 @@
         </ul>
       </div>
     </footer>
+    <!-- JAVASCRIPT DER TJEKKER KODEN -->
+    <script>
+      // Skift 'minkode123' ud med den adgangskode, I gerne vil bruge!
+      const korrektKode = "EK";
 
+      function checkPassword() {
+        const indtastetKode = document.getElementById("password-input").value;
+        const errorMsg = document.getElementById("error-msg");
+        const overlay = document.getElementById("login-overlay");
+
+        if (indtastetKode === korrektKode) {
+          // Hvis koden er rigtig, fjerner vi login-boksen fra skærmen
+          overlay.style.display = "none";
+        } else {
+          // Hvis koden er forkert, viser vi en fejlbesked
+          errorMsg.textContent = "Forkert adgangskode, prøv igen.";
+        }
+      }
+
+      // Gør det også muligt at trykke "Enter" for at logge ind
+      document
+        .getElementById("password-input")
+        .addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            checkPassword();
+          }
+        });
+    </script>
     <script>
       const leafContainer = document.querySelector(".falling-leaves");
 
