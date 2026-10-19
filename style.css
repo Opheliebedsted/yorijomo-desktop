@@ -465,7 +465,7 @@ main,
   align-items: flex-end;
 }
 .insta__title {
-  font: 00 36px/1.2 var(--serif);
+  font: 300 36px/1.2 var(--serif);
 }
 .insta__link {
   font: 400 18px/1.2 var(--sans);
