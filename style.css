@@ -125,7 +125,7 @@ main,
 /* ============ Hero-karrusel ============ */
 .hero {
   position: relative;
-  height: 752px;
+  height: 100vh;
   overflow: hidden;
 }
 .hero__track {
@@ -138,7 +138,7 @@ main,
 }
 .hero__track img {
   width: 500px;
-  height: 752px;
+  height: 100vh;
   object-fit: cover;
   flex: none;
 }
@@ -153,7 +153,7 @@ main,
   left: 0;
   top: 376px;
   width: 498px;
-  padding: 20px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   gap: 16px;
