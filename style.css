@@ -216,9 +216,9 @@ main,
 .hero__title {
   font: 400 48px/1.2 var(--serif);
 }
-.hero__title .accent {
+/* .hero__title .accent {
   color: var(--olive-50);
-}
+} */
 .hero__text {
   font: 400 20px/1.2 var(--sans);
 }
